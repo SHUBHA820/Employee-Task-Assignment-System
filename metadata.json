@@ -1,0 +1,6 @@
+{
+  "name": "Employee Task Assignment System",
+  "description": "Enterprise Employee Task Assignment System with Manager and Employee dashboards, microservice architecture inspector, JWT role-based access control, task delegation, and real-time Kafka event notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

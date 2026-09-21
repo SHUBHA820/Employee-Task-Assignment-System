@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Ultra-Realistic iOS Control Center Liquid Glass Utilities */
+  .glass-panel {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%), rgba(18, 26, 45, 0.45);
+    backdrop-filter: blur(28px) saturate(220%) brightness(118%);
+    -webkit-backdrop-filter: blur(28px) saturate(220%) brightness(118%);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 
+      0 12px 36px 0 rgba(0, 0, 0, 0.35),
+      inset 0 1.5px 1px 0 rgba(255, 255, 255, 0.65),
+      inset 0 -1px 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-panel-light {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.12) 100%), rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(30px) saturate(240%) brightness(125%);
+    -webkit-backdrop-filter: blur(30px) saturate(240%) brightness(125%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 
+      0 12px 32px 0 rgba(0, 0, 0, 0.2),
+      inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.08) 100%), rgba(15, 22, 40, 0.5);
+    backdrop-filter: blur(28px) saturate(220%) brightness(118%);
+    -webkit-backdrop-filter: blur(28px) saturate(220%) brightness(118%);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 
+      0 12px 36px 0 rgba(0, 0, 0, 0.32),
+      inset 0 1.5px 1px 0 rgba(255, 255, 255, 0.65),
+      inset 0 -1px 0 0 rgba(255, 255, 255, 0.12);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.14) 100%), rgba(20, 30, 55, 0.55);
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 
+      0 16px 48px 0 rgba(14, 165, 233, 0.25),
+      inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.85),
+      0 0 20px 0 rgba(56, 189, 248, 0.2);
+    transform: translateY(-3px) scale(1.005);
+  }
+
+  .glass-card-static {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.09) 100%), rgba(15, 23, 42, 0.52);
+    backdrop-filter: blur(28px) saturate(220%) brightness(118%);
+    -webkit-backdrop-filter: blur(28px) saturate(220%) brightness(118%);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 
+      0 12px 36px 0 rgba(0, 0, 0, 0.35),
+      inset 0 1.5px 1px 0 rgba(255, 255, 255, 0.65),
+      inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-modal {
+    background: linear-gradient(145deg, rgba(20, 28, 48, 0.82) 0%, rgba(30, 42, 68, 0.78) 100%);
+    backdrop-filter: blur(36px) saturate(240%) brightness(120%);
+    -webkit-backdrop-filter: blur(36px) saturate(240%) brightness(120%);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 
+      0 30px 60px -12px rgba(0, 0, 0, 0.75),
+      0 0 50px 0 rgba(99, 102, 241, 0.25),
+      inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.75);
+  }
+
+  .glass-input {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f8fafc;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    transition: all 0.2s ease;
+  }
+
+  .glass-input:focus {
+    background: rgba(18, 28, 52, 0.8);
+    border-color: rgba(99, 102, 241, 0.65);
+    box-shadow: 
+      0 0 0 3px rgba(99, 102, 241, 0.35),
+      inset 0 2px 4px 0 rgba(0, 0, 0, 0.25),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+  }
+
+  .glass-button {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.55) 0%, rgba(6, 182, 212, 0.45) 100%);
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 
+      0 6px 20px rgba(6, 182, 212, 0.25),
+      inset 0 1.5px 1px rgba(255, 255, 255, 0.75);
+    transition: all 0.2s ease;
+  }
+
+  .glass-button:hover {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.75) 0%, rgba(6, 182, 212, 0.65) 100%);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 
+      0 8px 25px rgba(6, 182, 212, 0.4),
+      inset 0 1.5px 1.5px rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+  }
+
+  .glass-badge {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+  }
+
+  .ice-glow-cyan {
+    box-shadow: 0 0 30px -2px rgba(6, 182, 212, 0.45);
+  }
+
+  .ice-glow-indigo {
+    box-shadow: 0 0 30px -2px rgba(99, 102, 241, 0.45);
+  }
+}
+
+/* Custom Scrollbar for Liquid Glass Panels */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Ambient Frosted Orbs Animation */
+@keyframes floatOrb1 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(80px, -60px) scale(1.15); }
+}
+
+@keyframes floatOrb2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(-70px, 70px) scale(0.85); }
+}
+
+@keyframes floatOrb3 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(50px, 50px) scale(1.1); }
+}
+
+.animate-orb-1 {
+  animation: floatOrb1 16s ease-in-out infinite;
+}
+
+.animate-orb-2 {
+  animation: floatOrb2 20s ease-in-out infinite;
+}
+
+.animate-orb-3 {
+  animation: floatOrb3 24s ease-in-out infinite;
+}
+
